@@ -1,0 +1,16 @@
+.blog-details {
+  margin-top: 100px;
+}
+
+.blog-details .container {
+  padding-top: 20px;
+}
+
+.blog-details .blog-img img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-details .content {
+  margin-top: 20px;
+}

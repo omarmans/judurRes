@@ -1,0 +1,20 @@
+<div class="blog-details">
+  <div class="container">
+    <h2 *ngIf="blogPost">{{ blogPost.title }}</h2>
+    <div class="blog-img" *ngIf="blogPost">
+      <img [src]="blogPost.imgSrc" alt="Blog Image" />
+    </div>
+    <p *ngIf="blogPost"><strong>Author:</strong> {{ blogPost.author }}</p>
+    <p *ngIf="blogPost"><strong>Comments:</strong> {{ blogPost.comments }}</p>
+    <p *ngIf="blogPost">
+      <strong>Description:</strong> {{ blogPost.description }}
+    </p>
+    <div class="content" *ngIf="blogPost">
+      <h4>Content</h4>
+      <p>{{ blogPost.content }}</p>
+    </div>
+    <div *ngIf="!blogPost">
+      <p>Blog post not found.</p>
+    </div>
+  </div>
+</div>
